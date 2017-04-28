@@ -10,11 +10,25 @@ this.altitude = 0;
 
 }
 
+// ADDING TO THE OBJECT (CLASS)
+// ClassName.prototype.methodName = function () {
+//
+// };
+
+Plane.prototype.fly = function () {
+  this.altitude = 3000;
+};
+
 const myPlane = new Plane();
 
-result_message = myPlane.wings;
+function F_16() {
+  this.speed = 1000;
+}
+
+const F_16.prototype = new Plane();
 
 
+result_message = F_16.speed;
 
 
 result.innerHTML = result_message;
